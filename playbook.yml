@@ -25,3 +25,9 @@
   roles:
     - filebeat
   tags: filebeat
+
+- name: Install Logstash
+  hosts: elasticsearch
+  roles:
+    - logstash
+  tags: logstash
